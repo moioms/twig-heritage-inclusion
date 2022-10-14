@@ -14,10 +14,12 @@
 <body>
 <nav>
     {% block content %}
-        <li> Accueil </li>
-        <li> Présentation </li>
-        <li> Contact </li>
+        {% include '_nav.html.twig' %}
     
+    {% endblock %}
+
+    {% block footer %}
+        {% include '_footer.html.twig' %}      
     {% endblock %}
 </nav>
 </body>
